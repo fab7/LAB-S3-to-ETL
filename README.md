@@ -1,5 +1,6 @@
 # Sparkify S3 to AWS/Redshift ETL
-## ------- A Cloud Data Warehouse Lab Project -------
+
+## A Lab Project on Cloud Data Warehouse
 
 This lab project builds a data warehouse based on AWS Redshift. A data warehouse is a large store of data collected from a wide range of sources within a company and used to guide management decisions.
 
@@ -51,7 +52,7 @@ Open a terminal and connect to the database of the Redshift cluster with the com
     - `psql -h dwhcluster.c4p6b3uqdbp8.us-west-2.redshift.amazonaws.com -p 5439 -U dwhuser -d dwh`
 
 ### STEP-6: Pause your cluster
-During development time, you can send your cluster to a 'PAUSE' state via the AWS / Redshift console. When the cluster is in this state, you won't be charged and you can also restore it quickly agin via the AWS / Redshift console.  
+During development time, you can send your cluster to a 'PAUSE' state via the AWS / Redshift console. When the cluster is in this state, you won't be charged and you can later restore it in short time via the AWS / Redshift console.  
 
 ### STEP-7: Delete your Redshift cluster on AWS
 - If you no longer need your cluster, you can delete it by runninn the command:
