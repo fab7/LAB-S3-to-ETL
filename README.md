@@ -23,7 +23,7 @@ The data of the pipeline come from two datasets located in Amazon S3:
 ## Extract-Transform-Load Pipeline
 The setup and operation of the ETL pipeline is controlled by four Python  scripts (`create_cluster.py`,  `create_tables.py`, `etl.py`, `delete_cluster.py`) a Python module (`sql_queries.py`) and a configuration file (`myDWH.cfg`).
 
-During the ETL processing, data is loaded from the above S3 datasets into staging tables of the Redshift cluster. Next, the following an start schema suitable for data analytics is built from SQL statements defined in  `sql_queries.py` and further executed by the srcipt `etl.py`.
+During the ETL processing, data is loaded from the above S3 datasets into staging tables of the Redshift cluster. Next, the following star schema suitable for data analytics is built from SQL statements defined in  `sql_queries.py` and further executed by the srcipt `etl.py`.
 
 ![Alt text](./images/star_schema.png "Fig.2")<p align="center">*Fig.2 - Start schema*</p>
 
